@@ -1,0 +1,11 @@
+{
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "editor.formatOnSave": true,
+  "editor.indentSize": "tabSize",
+  "editor.showUnused": true,
+  "editor.fontSize": 24
+}
