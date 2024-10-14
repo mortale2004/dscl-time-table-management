@@ -1,14 +1,14 @@
-import mongoose, { mongo } from "mongoose";
-// import config from "@repo/env";
-// import logger from "@repo/logger";
+import config from "@repo/env";
+import mongoose from "mongoose";
+import logger from "@repo/logger";
 
 const connectToDB = async () => {
   try {
-    // const connection = await mongoose.connect(config.DATABASE_URL);
+    const connection = await mongoose.connect(config.DATABASE_URL);
   } catch (error) {
-    // mongoose.connection.on("connected", () => {
-    //   logger.log("Connected To DB");
-    // });
+    mongoose.connection.on("connected", () => {
+      logger.info("Connected To DB");
+    });
   }
 };
 
